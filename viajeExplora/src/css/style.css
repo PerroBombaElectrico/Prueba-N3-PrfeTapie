@@ -1,0 +1,11 @@
+body { font-family: Arial, sans-serif; }
+
+.hero-section {
+  min-height: 70vh;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+}
+
+@media (max-width: 768px) {
+  .hero-section { min-height: 55vh; }
+}
