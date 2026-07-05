@@ -1,21 +1,22 @@
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import Carousel from "../components/Carousel";
-import Destinations from "../components/Destinations";
-import Itinerary from "../components/Itinerary";
-import PackageModal from "../components/PackageModal";
-import Footer from "../components/Footer";
+import { useState } from "react";
+import Navbar from "../componentes/Navbar";
+import Hero from "../componentes/Hero";
+import Carousel from "../componentes/Carousel";
+import Destinations from "../componentes/Destinations";
+import Itinerary from "../componentes/Itinerary";
+import Contact from "../componentes/Contacts";
 
 function Home() {
+  const [search, setSearch] = useState("");
+
   return (
     <>
-      <Navbar />
+      <Navbar search={search} setSearch={setSearch} />
       <Hero />
       <Carousel />
-      <Destinations />
+      <Destinations search={search} />
       <Itinerary />
-      <PackageModal />
-      <Footer />
+      <Contact />
     </>
   );
 }
