@@ -32,4 +32,4 @@ npm run dev
 
 ## Autor
 
-Tu nombre aquí
+Felipe
